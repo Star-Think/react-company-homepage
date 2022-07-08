@@ -1,0 +1,408 @@
+/* reset */
+
+* {
+  -webkit-text-size-adjust: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+textarea,
+select,
+button,
+table {
+  font-family: "Noto Sans KR", "Apple Gothic", "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.7em;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  color: #686868;
+  word-break: keep-all;
+  -webkit-text-size-adjust: none;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -999em;
+}
+
+button {
+  cursor: pointer;
+}
+
+header,
+hgroup,
+article,
+nav,
+footer,
+figure,
+figcaption,
+canvas,
+section,
+time {
+  display: block;
+}
+
+textarea,
+input,
+button {
+  background: url(none);
+  -webkit-border-radius: 1px;
+  -webkit-appearance: none;
+}
+
+hr {
+  clear: both;
+  display: none;
+}
+
+*html body img {
+  margin: none;
+  padding: none;
+}
+
+/*for IE 6*/
+
+img[usemap] {
+  border: none;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+br {
+  font-family: "Noto Sans KR" !important;
+}
+
+@font-face {
+  font-family: "NEXONFootballGothicBA1";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXONFootballGothicBA1.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+::-webkit-input-placeholder {
+  color: #999;
+}
+
+:-moz-placeholder {
+  color: #999;
+}
+
+::-moz-placeholder {
+  color: #999;
+}
+
+:-ms-input-placeholder {
+  color: #999;
+}
+
+:placeholder-shown {
+  color: #999;
+}
+
+table caption {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -999em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  vertical-align: middle !important;
+  margin: -2px 3px 0 0 !important;
+}
+
+input,
+select {
+  vertical-align: middle;
+  background: #fff;
+}
+
+input,
+textarea,
+button {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+}
+
+input[type="radio"] {
+  -webkit-appearance: radio;
+}
+
+/* user class */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+th,
+.bold {
+  font-weight: 700;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.hide {
+  position: absolute;
+  visibility: hidden;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  font: 0/0 Arial;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.input {
+  height: 35px;
+  padding: 5px 12px;
+  font-size: 15px;
+  line-height: 23px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.textarea {
+  padding: 5px 9px;
+  font-size: 15px;
+  line-height: 24px;
+  border: 1px solid #ddd;
+  resize: none;
+  overflow: auto;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.select {
+  height: 35px;
+  padding: 5px 12px;
+  font-size: 15px;
+  line-height: 23px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+input[type="file"].input {
+  border: 0;
+  padding: 0;
+}
+
+.mgb2 {
+  margin-bottom: 2px !important;
+}
+
+.mgb3 {
+  margin-bottom: 3px !important;
+}
+
+.mgb4 {
+  margin-bottom: 4px !important;
+}
+
+.mgb5 {
+  margin-bottom: 5px !important;
+}
+
+.mgb6 {
+  margin-bottom: 6px !important;
+}
+
+.mgb7 {
+  margin-bottom: 7px !important;
+}
+
+.mgb8 {
+  margin-bottom: 8px !important;
+}
+
+.mgb9 {
+  margin-bottom: 9px !important;
+}
+
+.mgb10 {
+  margin-bottom: 10px !important;
+}
+
+.mgb15 {
+  margin-bottom: 15px !important;
+}
+
+.mgb20 {
+  margin-bottom: 20px !important;
+}
+
+.mgb25 {
+  margin-bottom: 25px !important;
+}
+
+.mgb30 {
+  margin-bottom: 30px !important;
+}
+
+.mgb40 {
+  margin-bottom: 40px !important;
+}
+
+.mgb50 {
+  margin-bottom: 50px !important;
+}
+
+.mgt5 {
+  margin-top: 5px !important;
+}
+
+.mgt10 {
+  margin-top: 10px !important;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.inlineblock {
+  display: inline-block;
+}
+
+.space-center {
+  text-align: center !important;
+}
+
+.space-right {
+  text-align: right !important;
+}
+
+.space-left {
+  text-align: left !important;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.text-point {
+  color: #2f86ed;
+}

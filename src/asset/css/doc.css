@@ -1,0 +1,765 @@
+@charset "utf-8";
+/* doc.css는 디자인페이지 스타일을 정의합니다. */
+
+.table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.doc-cnt {
+  margin-bottom: 50px;
+}
+
+.doc-cnt.bg {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background: #f5f5f5;
+}
+
+.doc-cnt:last-child {
+  margin-bottom: 0;
+}
+
+.doc-tit {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.2em;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #242424;
+  font-family: "NanumSquare";
+  margin-bottom: 50px;
+}
+
+.blt-tit {
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.2em;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #454545;
+  font-family: "NanumSquare";
+  max-width: 1260px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto 20px;
+}
+
+.blt-tit:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin: -0.2em 10px 0 0;
+  width: 20px;
+  height: 20px;
+  background: url("../images/sub/blt.png") 0 0 no-repeat;
+}
+
+.depth2-tit {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.depth2-tit h3 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #242424;
+  font-family: "NanumSquare";
+}
+
+.depth2-tit h3 span {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.depth2-tit h3 span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #242424;
+}
+
+.hr {
+  margin: 50px 0;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+}
+
+.sub-tab {
+  max-width: 1820px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto 50px;
+  text-align: center;
+  font-family: "NanumSquare";
+}
+
+.sub-tab .inner {
+  border-bottom: 1px solid #ddd;
+}
+
+.sub-tab ul {
+  display: inline-flex;
+  width: auto;
+}
+
+.sub-tab ul li {
+  width: auto;
+  padding: 0 25px;
+}
+
+.sub-tab ul li a {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #454545;
+  padding-bottom: 20px;
+}
+
+.sub-tab ul li.active a {
+  color: #223a73;
+}
+
+.sub-tab ul li.active a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #223a73;
+  z-index: 2;
+}
+
+.third-tab {
+  max-width: 1260px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto 50px;
+  text-align: center;
+  font-family: "NanumSquare";
+}
+
+.third-tab ul {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.third-tab ul li {
+  display: table-cell;
+  vertical-align: middle;
+  width: auto;
+  border: 1px solid #ddd;
+  border-left: 0;
+}
+
+.third-tab ul li:first-child {
+  border-left: 1px solid #ddd;
+}
+
+.third-tab ul li a {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #454545;
+  padding-top: 2px;
+}
+
+.third-tab ul li:hover a {
+  color: #223a73;
+}
+
+.third-tab ul li.active a {
+  background: #223a73;
+  color: #fff;
+}
+
+.third-tab ul li.active:hover a {
+  color: #fff;
+}
+
+.table-wrap {
+}
+
+.table01 {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  border: 0;
+  letter-spacing: -0.04em;
+  -ms-word-break: break-all;
+  word-break: break-all;
+}
+
+.table01 thead th {
+  padding: 13px 5px;
+  line-height: 1.55em;
+  font-weight: 400;
+  color: #454545;
+  border: 1px solid #ddd;
+  text-align: center;
+  height: 49px;
+  background: #f0f0f0;
+}
+
+.table01 tbody td {
+  padding: 13px 5px;
+  line-height: 1.55em;
+  font-weight: 300;
+  color: #454545;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.table01 th:first-child,
+.table01 td:first-child {
+  border-left: 0;
+}
+
+.table01 th:last-child,
+.table01 td:last-child {
+  border-right: 0;
+}
+
+.headcopy {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 40px;
+}
+
+.headcopy h3 {
+  font-size: 30px;
+  line-height: 1.3em;
+  font-weight: 700;
+  color: #242424;
+  margin-bottom: 20px;
+}
+
+.headcopy p {
+  font-size: 17px;
+}
+
+.overview {
+  position: relative;
+  text-align: center;
+  padding: 120px 50px;
+  min-height: 880px;
+  background-color: #666;
+  background-image: url("../images/sub/bg_overview.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overview .headcopy {
+  color: #fff;
+  margin-bottom: 120px;
+}
+
+.overview .headcopy h3 {
+  color: #fff;
+}
+
+.overview .row {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.overview .row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.overview .col {
+  float: left;
+  width: 33.333333%;
+  padding: 0 40px;
+}
+
+.overview .col .cir {
+  display: table;
+  table-layout: fixed;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+}
+
+.overview .col .ico {
+  height: ;
+  line-height: ;
+  margin-bottom: 20px;
+}
+
+.overview .col .tit {
+  font-size: 20px;
+  line-height: 1.3em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #242424;
+  margin-bottom: 5px;
+}
+
+.overview .col .txt {
+  font-size: 18px;
+  line-height: 1.3em;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.overview .col .desc {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.history {
+  overflow: hidden;
+  text-align: center;
+}
+
+.history .img {
+  max-width: 1350px;
+  margin: 0 auto 30px;
+}
+
+.history .img:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.history .img .col {
+  float: left;
+  width: 33.333333%;
+}
+
+.history .record {
+  position: relative;
+}
+
+.history .record:after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  z-index: -1;
+}
+
+.history .record ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.history .record li {
+  flex-basis: 226px;
+}
+
+.history .record li .year {
+  position: relative;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #242424;
+  padding-bottom: 30px;
+}
+
+.history .record li .year:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: calc(50% - 5px);
+  width: 11px;
+  height: 11px;
+  background: #223a73;
+  border-radius: 50%;
+}
+
+.history .record li .txt {
+  position: relative;
+  letter-spacing: -0.04em;
+  color: #242424;
+}
+
+.history .record li .txt:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: #ddd;
+  z-index: -1;
+}
+
+.history .record li:nth-child(odd) .txt {
+  padding-top: 60px;
+}
+
+.history .record li:nth-child(odd) .txt:after {
+  height: 45px;
+}
+
+.history .record li:nth-child(even) .txt {
+  padding-top: 130px;
+}
+
+.history .record li:nth-child(even) .txt:after {
+  height: 115px;
+}
+
+.local-cnt {
+  max-width: 1000px;
+  margin: 0 auto 120px;
+}
+
+.local-cnt:last-child {
+  margin-bottom: 0;
+}
+
+.local-cnt .blt-tit {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.local-map {
+  margin-bottom: 40px;
+}
+
+.local-map .root_daum_roughmap {
+  width: 100% !important;
+}
+
+.local-map .wrap_map {
+  width: 100% !important;
+}
+
+.local-map .roughmap_lebel_text {
+  line-height: 0 !important;
+  font-size: 0 !important;
+}
+
+.local-map .roughmap_lebel_text:after {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.local-map .kmap1 .roughmap_lebel_text:after {
+  content: "이넥스월 본사";
+}
+
+.local-map .kmap2 .roughmap_lebel_text:after {
+  content: "이넥스월 부산지부";
+}
+
+.local-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.local-info .col {
+  width: auto;
+}
+
+.local-info .box {
+  display: table;
+}
+
+.local-info .ico {
+  width: 70px;
+}
+
+.local-info .txt {
+  padding-left: 20px;
+  line-height: 1.4em;
+}
+
+.local-info .txt dt {
+  font-weight: 500;
+  color: #242424;
+}
+
+.local-info .txt dd {
+  font-weight: 300;
+  color: #454545;
+}
+
+.bsns-info {
+  text-align: center;
+}
+
+.bsns-info .row {
+  display: flex;
+}
+
+.bsns-info .col {
+  width: 33.333333%;
+  color: #454545;
+}
+
+.bsns-info .col .ico {
+  margin: 0 auto 15px;
+}
+
+.bsns-info .col .tit {
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.bsns-info .col .txt {
+  line-height: 1.8em;
+}
+
+.feature-tit {
+  margin-bottom: 40px;
+  padding-left: 40px;
+  background: url("../images/sub/ico_prod_tt.png") 0 0 no-repeat;
+  color: #454545;
+}
+
+.feature-tit h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0;
+  font-family: "NanumSquare";
+}
+
+.feature-tit p {
+}
+
+.feature-zone {
+  position: relative;
+  padding: 50px 30px;
+  border: 1px solid #ddd;
+  margin-bottom: 50px;
+}
+
+.feature-zone:last-of-type {
+  margin-bottom: 0;
+}
+
+.feature-zone .title {
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.3em;
+  font-weight: 700;
+  color: #454545;
+  margin-bottom: 25px;
+  font-family: "NanumSquare";
+}
+
+.feature-zone .pic .items {
+  padding: 0 70px;
+  margin: 0 auto;
+}
+
+.feature-zone .pic .item {
+  text-align: center;
+}
+
+.feature-zone .pic .item .thumb {
+  display: inline-block;
+}
+
+.feature-zone .slick-arrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+  border: 0;
+  outline: 0;
+  z-index: 50;
+  overflow: hidden;
+  text-indent: -999em;
+  background-color: transparent;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.feature-zone .slick-prev {
+  background-image: url("../images/sub/bsns_prev.png");
+  left: 0px;
+}
+
+.feature-zone .slick-next {
+  background-image: url("../images/sub/bsns_next.png");
+  right: 0px;
+}
+
+.feature-zone .gallery {
+  padding: 0 119px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.feature-zone .gallery .origins {
+  margin-bottom: 30px;
+}
+
+.feature-zone .gallery .origins .item .thumb {
+  display: inline-block;
+}
+
+.feature-zone .gallery .thumbnails {
+}
+
+.feature-zone .gallery .thumbnails .slick-list {
+  margin: 0 -15px;
+}
+
+.feature-zone .gallery .thumbnails .item {
+  padding: 0 15px;
+}
+
+.feature-zone .gallery .slick-prev {
+  left: -119px;
+}
+
+.feature-zone .gallery .slick-next {
+  right: -119px;
+}
+
+.feature-zone .img-cnt {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feature-zone .img-cnt:last-child {
+  margin-bottom: 0;
+}
+
+.feature-zone .table-wrap {
+  max-width: 1058px;
+  margin: 0 auto;
+}
+
+.feature-zone .table-wrap.narrow {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.color-list {
+  text-align: center;
+}
+
+.color-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  margin: 0 -12.5px;
+}
+
+.color-list.cen ul {
+  justify-content: center;
+}
+
+.color-list li {
+  padding: 0 12.5px;
+  margin-bottom: 15px;
+}
+
+.color-list ul.row-3 {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.color-list ul.row-3 li {
+  width: 33.333333%;
+}
+
+.color-list ul.row-4 {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.color-list ul.row-4 li {
+  width: 25%;
+}
+
+.color-list ul.row-8 {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.color-list ul.row-8 li {
+  width: 12.5%;
+}
+
+.color-list.mg10 ul {
+  margin: 0 -5px;
+}
+
+.color-list.mg10 ul li {
+  padding: 0 5px;
+}
+
+.color-list.mg32 ul {
+  margin: 0 -16px;
+}
+
+.color-list.mg32 ul li {
+  padding: 0 16px;
+}
+
+.color-list .desc {
+  margin-top: 5px;
+}
+
+.color-list2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  margin: 0 -8px;
+}
+
+.color-list2 li {
+  width: 10%;
+  padding: 0 8px;
+  margin-bottom: 15px;
+}
+
+.color-list2 li .img {
+  padding: 0 0 0 7px;
+}
+
+.color-list2 li p {
+  font-size: 15px;
+  line-height: 1.4em;
+  letter-spacing: -0.03em;
+  margin-top: 5px;
+}
