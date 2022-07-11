@@ -3,12 +3,12 @@ import React, { useState } from "react";
 const env = process.env;
 env.PUBLIC_URL = env.PUBLIC_URL || "";
 
-const MainHeader = () => {
+const MainHeader = ({ setSubMenuCheck }) => {
   const [menuCheck, setMenuCheck] = useState(false);
 
   return (
     <>
-      <div id="header">
+      <div id="header" onMouseLeave={() => setMenuCheck(false)}>
         <div className="sitelogo">
           <a href="/index.php" className="off">
             <img
@@ -26,10 +26,7 @@ const MainHeader = () => {
         <div className="contain">
           <div id="gnb" className="gnb">
             <h2 className="hide">주메뉴</h2>
-            <ul
-              onMouseEnter={() => setMenuCheck(true)}
-              onMouseLeave={() => setMenuCheck(false)}
-            >
+            <ul onMouseEnter={() => setMenuCheck(true)}>
               <li className="m1">
                 <a href="/sub/sub01_01.php">회사소개</a>
                 <div className={`submenu ${menuCheck ? "menu-active" : ""}`}>
@@ -99,10 +96,11 @@ const MainHeader = () => {
             </ul>
           </div>
         </div>
-        <a href="#menu" className="btn-m-menu">
+        <a href="#menu" className="btn-m-menu" onClick={setSubMenuCheck(false)}>
           <span>menu</span>
         </a>
         <div
+          onMouseEnter={() => setMenuCheck(true)}
           className={`submenu-bg ${menuCheck ? "menu-active-back" : ""}`}
         ></div>
       </div>
