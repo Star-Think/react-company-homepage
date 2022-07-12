@@ -1369,3 +1369,7 @@ div.menu-opened .btn-m-menu span:after {
 .mobile-navigation .nav-menu {
   text-align: left;
 }
+
+.submenu_active {
+  display: block !important;
+}
