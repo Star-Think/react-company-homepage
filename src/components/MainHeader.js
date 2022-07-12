@@ -1,10 +1,101 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const env = process.env;
 env.PUBLIC_URL = env.PUBLIC_URL || "";
 
 const MainHeader = ({ setSubMenuCheck }) => {
   const [menuCheck, setMenuCheck] = useState(false);
+
+  const sub_menu = [
+    {
+      id: "m1",
+      textName: "회사소개",
+      sub: [
+        {
+          subTextName: "회사 개요",
+          herf: "",
+        },
+        {
+          subTextName: "회사 연혁",
+          herf: "",
+        },
+      ],
+      active: "",
+    },
+    {
+      id: "m2",
+      textName: "사업분야",
+      sub: [
+        {
+          subTextName: "내진 준불연 단열일체형 패널",
+          herf: "",
+        },
+        {
+          subTextName: "SATIS(화장실 칸막이)",
+          herf: "",
+        },
+        {
+          subTextName: "SATIS 항균 불연패널",
+          herf: "",
+        },
+        {
+          subTextName: "PF단열재",
+          herf: "",
+        },
+        {
+          subTextName: "동화자연마루 스쿨",
+          herf: "",
+        },
+        {
+          subTextName: "동화자연마루 에코스택",
+          herf: "",
+        },
+      ],
+      active: "",
+    },
+    {
+      id: "m3",
+      textName: "Projects",
+      sub: [
+        {
+          subTextName: "관공서",
+          herf: "",
+        },
+        {
+          subTextName: "교육기관",
+          herf: "",
+        },
+        {
+          subTextName: "민간시설",
+          herf: "",
+        },
+      ],
+      active: "",
+    },
+    {
+      id: "m4",
+      textName: "Contact Us",
+      sub: [
+        {
+          subTextName: "Contact Us",
+          herf: "",
+        },
+      ],
+      active: "",
+    },
+  ];
+
+  const [sub_menu_list, setSub_menu_list] = useState([]);
+
+  // useEffect(() => {}, [setSub_menu_list(sub_menu)]);
+
+  const subMenuClickHandle = (id) => {
+    const list = sub_menu_list.find((it) =>
+      it.id === id ? { ...it, active: "active" } : it
+    );
+
+    setSub_menu_list(list);
+  };
 
   return (
     <>
@@ -96,7 +187,7 @@ const MainHeader = ({ setSubMenuCheck }) => {
             </ul>
           </div>
         </div>
-        <a href="#menu" className="btn-m-menu" onClick={setSubMenuCheck(false)}>
+        <a className="btn-m-menu" onClick={() => setSubMenuCheck(false)}>
           <span>menu</span>
         </a>
         <div
@@ -107,11 +198,34 @@ const MainHeader = ({ setSubMenuCheck }) => {
       <div id="menu" className="mobile-navigation">
         <nav className="nav-menu">
           <ul>
-            <li className="m1 ">
+            {sub_menu_list.map((data) => {
+              return (
+                <li
+                  key={data.id}
+                  className={`${data.id} arrow ${data.active}`}
+                  onClick={subMenuClickHandle(data.id)}
+                >
+                  <a href="#">{data.textName}</a>
+                  <div className="submenu">
+                    <ul>
+                      {data.sub.map((sData, idx) => {
+                        return (
+                          <li key={idx}>
+                            <a href={sData.herf}>{sData.subTextName}</a>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </li>
+              );
+            })}
+
+            <li className="m1 arrow">
               <a href="#">회사소개</a>
               <div className="submenu">
                 <ul>
-                  <li className="active">
+                  <li>
                     <a href="/sub/sub01_01.php">회사 개요</a>
                   </li>
                   <li>
@@ -120,7 +234,7 @@ const MainHeader = ({ setSubMenuCheck }) => {
                 </ul>
               </div>
             </li>
-            <li className="m2">
+            <li className="m2 arrow">
               <a href="#">사업분야</a>
               <div className="submenu">
                 <ul>
@@ -145,7 +259,7 @@ const MainHeader = ({ setSubMenuCheck }) => {
                 </ul>
               </div>
             </li>
-            <li className="m3">
+            <li className="m3 arrow">
               <a href="#">Projects</a>
               <div className="submenu">
                 <ul>
@@ -161,7 +275,7 @@ const MainHeader = ({ setSubMenuCheck }) => {
                 </ul>
               </div>
             </li>
-            <li className="m4">
+            <li className="m4 arrow">
               <a href="#">Contact Us</a>
               <div className="submenu">
                 <ul>
@@ -173,7 +287,7 @@ const MainHeader = ({ setSubMenuCheck }) => {
             </li>
           </ul>
         </nav>
-        <a href="javascript:void(0);" className="menu-close">
+        <a className="menu-close" onClick={() => setSubMenuCheck(true)}>
           Close
         </a>
       </div>
