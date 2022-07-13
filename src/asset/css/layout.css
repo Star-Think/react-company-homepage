@@ -836,7 +836,7 @@ div.menu-opened .btn-m-menu span:after {
   margin: 0 -12px;
 }
 
-.main-business .bsnsTab ul li {
+.main-business .bsnsTab ul .swiper-slide {
   width: auto;
   padding: 0 12px;
   min-width: 86px;
@@ -850,7 +850,7 @@ div.menu-opened .btn-m-menu span:after {
   display: block;
   font-size: 14px;
   line-height: 1.3em;
-  font-weight: 400;
+  font-weight: 550;
   letter-spacing: -0.02em;
   color: #818181;
 }
@@ -889,37 +889,44 @@ div.menu-opened .btn-m-menu span:after {
 }
 
 .main-business .bsnsTab ul li a:hover .ico1,
-.main-business .bsnsTab ul li.active a .ico1 {
+.main-business .bsnsTab ul li.active a .ico1,
+.main-business .bsnsTab ul li.react-tabs__tab--selected a .ico1 {
   background-image: url("../images/main/ico_bsns1_on.png");
 }
 
 .main-business .bsnsTab ul li a:hover .ico2,
-.main-business .bsnsTab ul li.active a .ico2 {
+.main-business .bsnsTab ul li.active a .ico2,
+.main-business .bsnsTab ul li.react-tabs__tab--selected a .ico2 {
   background-image: url("../images/main/ico_bsns2_on.png");
 }
 
 .main-business .bsnsTab ul li a:hover .ico3,
-.main-business .bsnsTab ul li.active a .ico3 {
+.main-business .bsnsTab ul li.active a .ico3,
+.main-business .bsnsTab ul li.react-tabs__tab--selected a .ico3 {
   background-image: url("../images/main/ico_bsns3_on.png");
 }
 
 .main-business .bsnsTab ul li a:hover .ico4,
-.main-business .bsnsTab ul li.active a .ico4 {
+.main-business .bsnsTab ul li.active a .ico4,
+.main-business .bsnsTab ul li.react-tabs__tab--selected a .ico4 {
   background-image: url("../images/main/ico_bsns4_on.png");
 }
 
 .main-business .bsnsTab ul li a:hover .ico5,
-.main-business .bsnsTab ul li.active a .ico5 {
+.main-business .bsnsTab ul li.active a .ico5,
+.main-business .bsnsTab ul li.react-tabs__tab--selected a .ico5 {
   background-image: url("../images/main/ico_bsns5_on.png");
 }
 
 .main-business .bsnsTab ul li a:hover .ico6,
-.main-business .bsnsTab ul li.active a .ico6 {
+.main-business .bsnsTab ul li.active a .ico6,
+.main-business .bsnsTab ul li.react-tabs__tab--selected a .ico6 {
   background-image: url("../images/main/ico_bsns6_on.png");
 }
 
 .main-business .bsnsTab ul li a:hover .tit,
-.main-business .bsnsTab ul li.active a .tit {
+.main-business .bsnsTab ul li.active a .tit,
+.main-business .bsnsTab ul li.react-tabs__tab--selected a .tit {
   color: #223a73;
 }
 

@@ -562,15 +562,15 @@
   .main-visual .item .anileft {
     transform: translateY(-50%);
   }
-  .main-visual .item.vis-active .cnt2 .anileft {
-    margin-left: 0;
-    margin-top: -0.75em;
-    transform: translateX(-50%);
+  .main-visual .swiper-slide-active .cnt2 .anileft {
+    margin-left: 0 !important;
+    margin-top: -0.75em !important;
+    transform: translateX(-50%) !important;
   }
-  .main-visual .item.vis-active .cnt3 .anileft {
-    margin-left: 0;
-    margin-top: -0.75em;
-    transform: translateX(-50%);
+  .main-visual .swiper-slide-active .cnt3 .anileft {
+    margin-left: 0 !important;
+    margin-top: -0.75em !important;
+    transform: translateX(-50%) !important;
   }
   .main-tit {
     font-size: 24px;
