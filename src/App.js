@@ -8,15 +8,23 @@ import "./asset/css/slick.css";
 import "./asset/css/swiper.min.css";
 import "./asset/css/TitilliumWeb.css";
 import "./asset/css/responsive.css";
+import React, { useState } from "react";
+
+export const CommonDispatchContext = React.createContext();
 
 function App() {
+  const [subMenuCheck, setSubMenuCheck] = useState(true);
   return (
     <BrowserRouter>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
+      <CommonDispatchContext.Provider value={{ setSubMenuCheck }}>
+        <div className="App">
+          <div id="wrapper" className={subMenuCheck ? "" : "menu-opened"}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+            </Routes>
+          </div>
+        </div>
+      </CommonDispatchContext.Provider>
     </BrowserRouter>
   );
 }
