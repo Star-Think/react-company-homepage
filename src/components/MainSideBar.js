@@ -1,8 +1,10 @@
 import React, { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { CommonDispatchContext } from "../App";
 import { sub_menu_list } from "../utils/HeaderData";
 
 const MainSideBar = () => {
+  const navigate = useNavigate();
   const { setSubMenuCheck } = useContext(CommonDispatchContext);
 
   const [subMenuId, setSubMenuId] = useState("");
@@ -41,7 +43,14 @@ const MainSideBar = () => {
                       {data.sub.map((sData, idx) => {
                         return (
                           <li key={idx}>
-                            <a href onClick={(e) => e.preventDefault}>
+                            <a
+                              href
+                              onClick={() => {
+                                navigate(sData.herf);
+                                document.body.style.overflow = "";
+                                setSubMenuCheck(true);
+                              }}
+                            >
                               {sData.subTextName}
                             </a>
                           </li>

@@ -2,55 +2,65 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 
 import MainSideBar from "./MainSideBar";
 import { CommonDispatchContext } from "../App";
+import { useNavigate } from "react-router-dom";
 
 const env = process.env;
 env.PUBLIC_URL = env.PUBLIC_URL || "";
 
-const MainHeader = () => {
+const MainHeader = ({ headerFix }) => {
+  const navigate = useNavigate();
   const { setSubMenuCheck } = useContext(CommonDispatchContext);
   const [menuCheck, setMenuCheck] = useState(false);
 
   return (
     <>
-      <div id="header" onMouseLeave={() => setMenuCheck(false)}>
+      <div
+        id="header"
+        className={headerFix ? "headerFix" : ""}
+        onMouseLeave={() => setMenuCheck(false)}
+      >
         <div className="sitelogo">
-          <a href="/index.php" className="off">
-            <img
-              src={process.env.PUBLIC_URL + "images/common/logo.png"}
-              alt="(주)이넥스월"
-            />
+          <a
+            href
+            onClick={() => navigate("/", { replace: true })}
+            className="off"
+            style={headerFix ? { display: "none" } : {}}
+          >
+            <img src={"/images/common/logo.png"} alt="(주)이넥스월" />
           </a>
-          <a href="/index.php" className="on">
-            <img
-              src={process.env.PUBLIC_URL + "images/common/logo_on.png"}
-              alt="(주)이넥스월"
-            />
+          <a
+            href
+            onClick={() => navigate("/", { replace: true })}
+            className="on"
+            style={headerFix ? { display: "block" } : {}}
+          >
+            <img src={"/images/common/logo_on.png"} alt="(주)이넥스월" />
           </a>
         </div>
         <div className="contain">
           <div id="gnb" className="gnb">
             <h2 className="hide">주메뉴</h2>
             <ul onMouseEnter={() => setMenuCheck(true)}>
-              <li className="m1">
-                <a href onClick={(e) => e.preventDefault}>
+              <li className={`m1 ${headerFix ? "fontColorBlack" : ""}`}>
+                <a href onClick={() => navigate("/company/introduce")}>
                   회사소개
                 </a>
                 <div className={`submenu ${menuCheck ? "menu-active" : ""}`}>
                   <ul>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a href onClick={() => navigate("/company/introduce")}>
                         회사 개요
                       </a>
                     </li>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a href onClick={() => navigate("/company/history")}>
                         회사 연혁
                       </a>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li className="m2">
+              <li className={`m2 ${headerFix ? "fontColorBlack" : ""}`}>
                 <a href onClick={(e) => e.preventDefault}>
                   사업분야
                 </a>
@@ -89,7 +99,7 @@ const MainHeader = () => {
                   </ul>
                 </div>
               </li>
-              <li className="m3">
+              <li className={`m3 ${headerFix ? "fontColorBlack" : ""}`}>
                 <a href onClick={(e) => e.preventDefault}>
                   Projects
                 </a>
@@ -113,7 +123,7 @@ const MainHeader = () => {
                   </ul>
                 </div>
               </li>
-              <li className="m4">
+              <li className={`m4 ${headerFix ? "fontColorBlack" : ""}`}>
                 <a href onClick={(e) => e.preventDefault}>
                   Contact Us
                 </a>
@@ -133,12 +143,13 @@ const MainHeader = () => {
         <a
           href
           className="btn-m-menu"
+          style={headerFix ? { borderLeftColor: "#ddd" } : {}}
           onClick={() => {
             document.body.style.overflow = "hidden";
             setSubMenuCheck(false);
           }}
         >
-          <span>menu</span>
+          <span className={headerFix ? "backgroudBlack" : ""}>menu</span>
         </a>
         <div
           onMouseEnter={() => setMenuCheck(true)}
@@ -149,6 +160,10 @@ const MainHeader = () => {
       <hr />
     </>
   );
+};
+
+MainHeader.defaultProps = {
+  headerFix: false,
 };
 
 export default MainHeader;

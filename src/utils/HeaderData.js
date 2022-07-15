@@ -5,11 +5,11 @@ export const sub_menu_list = [
     sub: [
       {
         subTextName: "회사 개요",
-        herf: "",
+        herf: "/company/introduce",
       },
       {
         subTextName: "회사 연혁",
-        herf: "",
+        herf: "/company/history",
       },
     ],
     active: "",

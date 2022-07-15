@@ -1192,10 +1192,10 @@ div.menu-opened .btn-m-menu span:after {
   letter-spacing: -0.03em;
 }
 
-/* .sub-visual.bg1 {
-    background-image: url("../images/common/sub_visual1.jpg");
+.sub-visual.bg1 {
+  background-image: url("/public/images/common/sub_visual1.jpg");
 }
-
+/*
 .sub-visual.bg2 {
     background-image: url("../images/common/sub_visual2.jpg");
 }
@@ -1379,4 +1379,16 @@ div.menu-opened .btn-m-menu span:after {
 
 .submenu_active {
   display: block !important;
+}
+.headerFix {
+  position: relative !important;
+  background-color: #fff;
+}
+.fontColorBlack > a {
+  color: #000 !important;
+}
+.backgroudBlack,
+.backgroudBlack::before,
+.backgroudBlack::after {
+  background: #242424 !important;
 }

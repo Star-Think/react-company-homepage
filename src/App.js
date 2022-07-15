@@ -9,6 +9,7 @@ import "./asset/css/swiper.min.css";
 import "./asset/css/TitilliumWeb.css";
 import "./asset/css/responsive.css";
 import React, { useState } from "react";
+import CompanyRoute from "./routes/CompanyRoute";
 
 export const CommonDispatchContext = React.createContext();
 
@@ -20,7 +21,8 @@ function App() {
         <div className="App">
           <div id="wrapper" className={subMenuCheck ? "" : "menu-opened"}>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route exact path="/" element={<Home />} />
+              <Route path="/company/*" element={<CompanyRoute />} />
             </Routes>
           </div>
         </div>
