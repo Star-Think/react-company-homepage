@@ -1392,3 +1392,7 @@ div.menu-opened .btn-m-menu span:after {
 .backgroudBlack::after {
   background: #242424 !important;
 }
+
+.feature-tit .item {
+  text-align: left;
+}

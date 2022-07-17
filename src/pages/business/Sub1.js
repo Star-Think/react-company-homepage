@@ -1,4 +1,5 @@
 import React from "react";
+import BusinessContent from "../../components/business/BusinessContent";
 import BusinessImageItem from "../../components/business/BusinessImageItem";
 import BusinessImageTop from "../../components/business/BusinessImageTop";
 import BusinessMidTop from "../../components/business/BusinessMidTop";
@@ -61,6 +62,7 @@ const Sub1 = () => {
             <BusinessTop topActive={1} />
             <BusinessMidTop contentObj={contentObj} subTabCheck={true} />
             <BusinessImageTop ImageAll={ImageAll} />
+            <BusinessContent />
           </div>
         </div>
         <MainFooter />
