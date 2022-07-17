@@ -22,7 +22,7 @@ const MainHeader = ({ headerFix }) => {
         <div className="sitelogo">
           <a
             href
-            onClick={() => navigate("/", { replace: true })}
+            onClick={() => navigate("/")}
             className="off"
             style={headerFix ? { display: "none" } : {}}
           >
@@ -30,7 +30,7 @@ const MainHeader = ({ headerFix }) => {
           </a>
           <a
             href
-            onClick={() => navigate("/", { replace: true })}
+            onClick={() => navigate("/")}
             className="on"
             style={headerFix ? { display: "block" } : {}}
           >
@@ -61,7 +61,7 @@ const MainHeader = ({ headerFix }) => {
                 </div>
               </li>
               <li className={`m2 ${headerFix ? "fontColorBlack" : ""}`}>
-                <a href onClick={(e) => e.preventDefault}>
+                <a href onClick={(e) => navigate("/business/sub1")}>
                   사업분야
                 </a>
                 <div className={`submenu ${menuCheck ? "menu-active" : ""}`}>

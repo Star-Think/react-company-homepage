@@ -10,6 +10,7 @@ import "./asset/css/TitilliumWeb.css";
 import "./asset/css/responsive.css";
 import React, { useState } from "react";
 import CompanyRoute from "./routes/CompanyRoute";
+import BusinessRoute from "./routes/BusinessRoute";
 
 export const CommonDispatchContext = React.createContext();
 
@@ -23,6 +24,7 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="/company/*" element={<CompanyRoute />} />
+              <Route path="/business/*" element={<BusinessRoute />} />
             </Routes>
           </div>
         </div>
