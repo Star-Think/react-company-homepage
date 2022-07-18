@@ -58,7 +58,7 @@
   margin: -0.2em 10px 0 0;
   width: 20px;
   height: 20px;
-  background: url("../images/sub/blt.png") 0 0 no-repeat;
+  background: url("/public/images/sub/blt.png") 0 0 no-repeat;
 }
 
 .depth2-tit {
@@ -267,7 +267,7 @@
   padding: 120px 50px;
   min-height: 880px;
   background-color: #666;
-  background-image: url("../images/sub/bg_overview.jpg");
+  background-image: url("/public/images/sub/bg_overview.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -546,7 +546,7 @@
 .feature-tit {
   margin-bottom: 40px;
   padding-left: 40px;
-  background: url("../images/sub/ico_prod_tt.png") 0 0 no-repeat;
+  background: url("/public/images/sub/ico_prod_tt.png") 0 0 no-repeat;
   color: #454545;
 }
 
@@ -612,12 +612,12 @@
 }
 
 .feature-zone .slick-prev {
-  background-image: url("../images/sub/bsns_prev.png");
+  background-image: url("/public/images/sub/bsns_prev.png");
   left: 0px;
 }
 
 .feature-zone .slick-next {
-  background-image: url("../images/sub/bsns_next.png");
+  background-image: url("/public/images/sub/bsns_next.png");
   right: 0px;
 }
 

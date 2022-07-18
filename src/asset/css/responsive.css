@@ -472,16 +472,16 @@
     padding-bottom: 130%;
   }
   .main-visual .bg1 {
-    background-image: url("../images/main/visual1.jpg");
+    background-image: url("/public/images/main/visual1.jpg");
   }
   .main-visual .bg2 {
-    background-image: url("../images/main/visual2.jpg");
+    background-image: url("/public/images/main/visual2.jpg");
   }
   .main-visual .bg3 {
-    background-image: url("../images/main/visual3.jpg");
+    background-image: url("/public/images/main/visual3.jpg");
   }
   .main-visual .bg4 {
-    background-image: url("../images/main/visual4.jpg");
+    background-image: url("/public/images/main/visual4.jpg");
   }
   .main-visual .bx-controls-direction a {
     width: 14px;

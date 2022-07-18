@@ -512,19 +512,19 @@ div.menu-opened .btn-m-menu span:after {
 }
 
 .main-visual .bg1 {
-  background-image: url("../images/main/visual1.jpg");
+  background-image: url("/public/images/main/visual1.jpg");
 }
 
 .main-visual .bg2 {
-  background-image: url("../images/main/visual2.jpg");
+  background-image: url("/public/images/main/visual2.jpg");
 }
 
 .main-visual .bg3 {
-  background-image: url("../images/main/visual3.jpg");
+  background-image: url("/public/images/main/visual3.jpg");
 }
 
 .main-visual .bg4 {
-  background-image: url("../images/main/visual4.jpg");
+  background-image: url("/public/images/main/visual4.jpg");
 }
 
 .main-visual .bx-controls-direction a {
@@ -541,12 +541,12 @@ div.menu-opened .btn-m-menu span:after {
 }
 
 .main-visual .bx-prev {
-  background-image: url("../images/main/slide_prev.png");
+  background-image: url("/public/images/main/slide_prev.png");
   left: 80px;
 }
 
 .main-visual .bx-next {
-  background-image: url("../images/main/slide_next.png");
+  background-image: url("/public/images/main/slide_next.png");
   right: 80px;
 }
 
@@ -867,63 +867,63 @@ div.menu-opened .btn-m-menu span:after {
 }
 
 .main-business .bsnsTab ul li a .ico1 {
-  background-image: url("../images/main/ico_bsns1.png");
+  background-image: url("/public/images/main/ico_bsns1.png");
 }
 
 .main-business .bsnsTab ul li a .ico2 {
-  background-image: url("../images/main/ico_bsns2.png");
+  background-image: url("/public/images/main/ico_bsns2.png");
 }
 
 .main-business .bsnsTab ul li a .ico3 {
-  background-image: url("../images/main/ico_bsns3.png");
+  background-image: url("/public/images/main/ico_bsns3.png");
 }
 
 .main-business .bsnsTab ul li a .ico4 {
-  background-image: url("../images/main/ico_bsns4.png");
+  background-image: url("/public/images/main/ico_bsns4.png");
 }
 
 .main-business .bsnsTab ul li a .ico5 {
-  background-image: url("../images/main/ico_bsns5.png");
+  background-image: url("/public/images/main/ico_bsns5.png");
 }
 
 .main-business .bsnsTab ul li a .ico6 {
-  background-image: url("../images/main/ico_bsns6.png");
+  background-image: url("/public/images/main/ico_bsns6.png");
 }
 
 .main-business .bsnsTab ul li a:hover .ico1,
 .main-business .bsnsTab ul li.active a .ico1,
 .main-business .bsnsTab ul li.react-tabs__tab--selected a .ico1 {
-  background-image: url("../images/main/ico_bsns1_on.png");
+  background-image: url("/public/images/main/ico_bsns1_on.png");
 }
 
 .main-business .bsnsTab ul li a:hover .ico2,
 .main-business .bsnsTab ul li.active a .ico2,
 .main-business .bsnsTab ul li.react-tabs__tab--selected a .ico2 {
-  background-image: url("../images/main/ico_bsns2_on.png");
+  background-image: url("/public/images/main/ico_bsns2_on.png");
 }
 
 .main-business .bsnsTab ul li a:hover .ico3,
 .main-business .bsnsTab ul li.active a .ico3,
 .main-business .bsnsTab ul li.react-tabs__tab--selected a .ico3 {
-  background-image: url("../images/main/ico_bsns3_on.png");
+  background-image: url("/public/images/main/ico_bsns3_on.png");
 }
 
 .main-business .bsnsTab ul li a:hover .ico4,
 .main-business .bsnsTab ul li.active a .ico4,
 .main-business .bsnsTab ul li.react-tabs__tab--selected a .ico4 {
-  background-image: url("../images/main/ico_bsns4_on.png");
+  background-image: url("/public/images/main/ico_bsns4_on.png");
 }
 
 .main-business .bsnsTab ul li a:hover .ico5,
 .main-business .bsnsTab ul li.active a .ico5,
 .main-business .bsnsTab ul li.react-tabs__tab--selected a .ico5 {
-  background-image: url("../images/main/ico_bsns5_on.png");
+  background-image: url("/public/images/main/ico_bsns5_on.png");
 }
 
 .main-business .bsnsTab ul li a:hover .ico6,
 .main-business .bsnsTab ul li.active a .ico6,
 .main-business .bsnsTab ul li.react-tabs__tab--selected a .ico6 {
-  background-image: url("../images/main/ico_bsns6_on.png");
+  background-image: url("/public/images/main/ico_bsns6_on.png");
 }
 
 .main-business .bsnsTab ul li a:hover .tit,
@@ -1022,7 +1022,7 @@ div.menu-opened .btn-m-menu span:after {
   margin: -0.2em 0 0 12px;
   width: 8px;
   height: 13px;
-  background: url("../images/main/arw_wh.png") 0 0 no-repeat;
+  background: url("/public/images/main/arw_wh.png") 0 0 no-repeat;
 }
 
 .main-project {
@@ -1115,7 +1115,7 @@ div.menu-opened .btn-m-menu span:after {
   margin: -0.2em 0 0 12px;
   width: 8px;
   height: 13px;
-  background: url("../images/main/arw.png") 0 0 no-repeat;
+  background: url("/public/images/main/arw.png") 0 0 no-repeat;
 }
 
 .main-project .slick-arrow {
@@ -1136,12 +1136,12 @@ div.menu-opened .btn-m-menu span:after {
 }
 
 .main-project .slick-prev {
-  background-image: url("../images/main/proj_prev.png");
+  background-image: url("/public/images/main/proj_prev.png");
   left: 135px;
 }
 
 .main-project .slick-next {
-  background-image: url("../images/main/proj_next.png");
+  background-image: url("/public/images/main/proj_next.png");
   left: 170px;
 }
 
@@ -1199,15 +1199,15 @@ div.menu-opened .btn-m-menu span:after {
 }
 /*
 .sub-visual.bg2 {
-    background-image: url("../images/common/sub_visual2.jpg");
+    background-image: url("/public/images/common/sub_visual2.jpg");
 }
 
 .sub-visual.bg3 {
-    background-image: url("../images/common/sub_visual3.jpg");
+    background-image: url("/public/images/common/sub_visual3.jpg");
 }
 
 .sub-visual.bg4 {
-    background-image: url("../images/common/sub_visual4.jpg");
+    background-image: url("/public/images/common/sub_visual4.jpg");
 } */
 
 #lnb {
