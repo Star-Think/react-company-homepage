@@ -11,6 +11,7 @@ import "./asset/css/responsive.css";
 import React, { useState } from "react";
 import CompanyRoute from "./routes/CompanyRoute";
 import BusinessRoute from "./routes/BusinessRoute";
+import ContactRoute from "./routes/ContactRoute";
 
 export const CommonDispatchContext = React.createContext();
 
@@ -25,6 +26,7 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route path="/company/*" element={<CompanyRoute />} />
               <Route path="/business/*" element={<BusinessRoute />} />
+              <Route path="/contact" element={<ContactRoute />} />
             </Routes>
           </div>
         </div>

@@ -124,13 +124,13 @@ const MainHeader = ({ headerFix }) => {
                 </div>
               </li>
               <li className={`m4 ${headerFix ? "fontColorBlack" : ""}`}>
-                <a href onClick={(e) => e.preventDefault}>
+                <a href onClick={(e) => navigate("/contact")}>
                   Contact Us
                 </a>
                 <div className={`submenu ${menuCheck ? "menu-active" : ""}`}>
                   <ul>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a href onClick={(e) => navigate("/contact")}>
                         Contact Us
                       </a>
                     </li>

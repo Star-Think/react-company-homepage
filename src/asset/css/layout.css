@@ -1479,3 +1479,10 @@ div.menu-opened .btn-m-menu span:after {
   text-align: center;
   line-height: 100%;
 }
+.cell.txt {
+  text-align: left;
+}
+.root_daum_roughmap.root_daum_roughmap_landing {
+  width: 1000px;
+  height: 500px;
+}
