@@ -5,7 +5,7 @@ import "swiper/css"; //basic
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-const BusinessContent = () => {
+const Sub1 = () => {
   return (
     <>
       <div className="doc-cnt">
@@ -144,4 +144,4 @@ const BusinessContent = () => {
   );
 };
 
-export default BusinessContent;
+export default Sub1;

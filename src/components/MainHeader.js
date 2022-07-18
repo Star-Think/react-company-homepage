@@ -67,32 +67,32 @@ const MainHeader = ({ headerFix }) => {
                 <div className={`submenu ${menuCheck ? "menu-active" : ""}`}>
                   <ul>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a href onClick={(e) => navigate("/business/sub1")}>
                         내진 준불연 단열일체형 패널
                       </a>
                     </li>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a href onClick={(e) => navigate("/business/sub2")}>
                         SATIS(화장실 칸막이)
                       </a>
                     </li>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a href onClick={(e) => navigate("/business/sub3")}>
                         SATIS 항균 불연패널
                       </a>
                     </li>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a href onClick={(e) => navigate("/business/sub4")}>
                         PF단열재
                       </a>
                     </li>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a href onClick={(e) => navigate("/business/sub5")}>
                         동화자연마루 스쿨
                       </a>
                     </li>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a href onClick={(e) => navigate("/business/sub6")}>
                         동화자연마루 에코스택
                       </a>
                     </li>

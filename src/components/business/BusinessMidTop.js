@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const BusinessMidTop = ({ contentObj, subTabCheck }) => {
+const BusinessMidTop = ({ contentObj, subTabCheck, subTabActive }) => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="depth2-tit">
@@ -12,32 +15,68 @@ const BusinessMidTop = ({ contentObj, subTabCheck }) => {
         <div className="third-tab">
           <div className="swiper-container">
             <ul className="swiper-wrapper">
-              <li className="swiper-slide ">
-                <a href="/sub/sub02_01_02.php">STONE</a>
+              <li
+                className={`swiper-slide ${subTabActive === 1 ? "active" : ""}`}
+              >
+                <a href onClick={() => navigate("/business/sub1/1")}>
+                  STONE
+                </a>
               </li>
-              <li className="swiper-slide ">
-                <a href="/sub/sub02_01_03.php">BRICKS</a>
+              <li
+                className={`swiper-slide ${subTabActive === 2 ? "active" : ""}`}
+              >
+                <a href onClick={() => navigate("/business/sub1/2")}>
+                  BRICKS
+                </a>
               </li>
-              <li className="swiper-slide ">
-                <a href="/sub/sub02_01_04.php">TERRACOTTA</a>
+              <li
+                className={`swiper-slide ${subTabActive === 3 ? "active" : ""}`}
+              >
+                <a href onClick={() => navigate("/business/sub1/3")}>
+                  TERRACOTTA
+                </a>
               </li>
-              <li className="swiper-slide ">
-                <a href="/sub/sub02_01_05.php">CERAMIC</a>
+              <li
+                className={`swiper-slide ${subTabActive === 4 ? "active" : ""}`}
+              >
+                <a href onClick={() => navigate("/business/sub1/4")}>
+                  CERAMIC
+                </a>
               </li>
-              <li className="swiper-slide ">
-                <a href="/sub/sub02_01_06.php">ALCP</a>
+              <li
+                className={`swiper-slide ${subTabActive === 5 ? "active" : ""}`}
+              >
+                <a href onClick={() => navigate("/business/sub1/5")}>
+                  ALCP
+                </a>
               </li>
-              <li className="swiper-slide ">
-                <a href="/sub/sub02_01_07.php">CRC</a>
+              <li
+                className={`swiper-slide ${subTabActive === 6 ? "active" : ""}`}
+              >
+                <a href onClick={() => navigate("/business/sub1/6")}>
+                  CRC
+                </a>
               </li>
-              <li className="swiper-slide ">
-                <a href="/sub/sub02_01_08.php">CMP</a>
+              <li
+                className={`swiper-slide ${subTabActive === 7 ? "active" : ""}`}
+              >
+                <a href onClick={() => navigate("/business/sub1/7")}>
+                  CMP
+                </a>
               </li>
-              <li className="swiper-slide ">
-                <a href="/sub/sub02_01_09.php">합성목재</a>
+              <li
+                className={`swiper-slide ${subTabActive === 8 ? "active" : ""}`}
+              >
+                <a href onClick={() => navigate("/business/sub1/8")}>
+                  합성목재
+                </a>
               </li>
-              <li className="swiper-slide ">
-                <a href="/sub/sub02_01_10.php">디자인 패널</a>
+              <li
+                className={`swiper-slide ${subTabActive === 9 ? "active" : ""}`}
+              >
+                <a href onClick={() => navigate("/business/sub1/9")}>
+                  디자인 패널
+                </a>
               </li>
             </ul>
           </div>
