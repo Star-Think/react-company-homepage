@@ -6,13 +6,14 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import { useNavigate } from "react-router-dom";
 
 SwiperCore.use([Autoplay]);
 
 const MainContent = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-
+  const navigate = useNavigate();
   return (
     <>
       <div id="main-content">
@@ -98,7 +99,7 @@ const MainContent = () => {
                     </div>
                     <a
                       href
-                      onClick={(e) => e.preventDefault}
+                      onClick={(e) => navigate("/business/sub1")}
                       className="btn-more"
                     >
                       View More
@@ -122,7 +123,7 @@ const MainContent = () => {
                     </div>
                     <a
                       href
-                      onClick={(e) => e.preventDefault}
+                      onClick={(e) => navigate("/business/sub2")}
                       className="btn-more"
                     >
                       View More
@@ -147,7 +148,7 @@ const MainContent = () => {
                     </div>
                     <a
                       href
-                      onClick={(e) => e.preventDefault}
+                      onClick={(e) => navigate("/business/sub3")}
                       className="btn-more"
                     >
                       View More
@@ -170,7 +171,7 @@ const MainContent = () => {
                     </div>
                     <a
                       href
-                      onClick={(e) => e.preventDefault}
+                      onClick={(e) => navigate("/business/sub4")}
                       className="btn-more"
                     >
                       View More
@@ -195,7 +196,7 @@ const MainContent = () => {
                     </div>
                     <a
                       href
-                      onClick={(e) => e.preventDefault}
+                      onClick={(e) => navigate("/business/sub5")}
                       className="btn-more"
                     >
                       View More
@@ -219,7 +220,7 @@ const MainContent = () => {
                     </div>
                     <a
                       href
-                      onClick={(e) => e.preventDefault}
+                      onClick={(e) => navigate("/business/sub6")}
                       className="btn-more"
                     >
                       View More
