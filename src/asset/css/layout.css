@@ -199,7 +199,9 @@
   text-decoration: none;
   transition: all 0.25s ease-in-out;
 }
-
+ul > li > a {
+  cursor: pointer;
+}
 #gnb .submenu > ul > li:hover > a,
 #gnb .submenu > ul > li.active > a {
   color: #fff;
@@ -1485,4 +1487,7 @@ div.menu-opened .btn-m-menu span:after {
 .root_daum_roughmap.root_daum_roughmap_landing {
   width: 1000px;
   height: 500px;
+}
+.sitelogo > a {
+  cursor: pointer;
 }

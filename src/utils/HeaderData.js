@@ -20,27 +20,27 @@ export const sub_menu_list = [
     sub: [
       {
         subTextName: "내진 준불연 단열일체형 패널",
-        herf: "",
+        herf: "/business/sub1",
       },
       {
         subTextName: "SATIS(화장실 칸막이)",
-        herf: "",
+        herf: "/business/sub2",
       },
       {
         subTextName: "SATIS 항균 불연패널",
-        herf: "",
+        herf: "/business/sub3",
       },
       {
         subTextName: "PF단열재",
-        herf: "",
+        herf: "/business/sub4",
       },
       {
         subTextName: "동화자연마루 스쿨",
-        herf: "",
+        herf: "/business/sub5",
       },
       {
         subTextName: "동화자연마루 에코스택",
-        herf: "",
+        herf: "/business/sub6",
       },
     ],
     active: "",
@@ -70,7 +70,7 @@ export const sub_menu_list = [
     sub: [
       {
         subTextName: "Contact Us",
-        herf: "",
+        herf: "/contact",
       },
     ],
     active: "",

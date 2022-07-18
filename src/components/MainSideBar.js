@@ -74,7 +74,13 @@ const MainSideBar = () => {
           Close
         </a>
       </div>
-      <div className="mobile-overlay"></div>
+      <div
+        className="mobile-overlay"
+        onClick={() => {
+          document.body.style.overflow = "";
+          setSubMenuCheck(true);
+        }}
+      ></div>
     </>
   );
 };
