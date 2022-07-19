@@ -8,7 +8,7 @@ const Sub1_2 = () => {
   return (
     <>
       <div className="doc-cnt">
-        <div className="blt-tit">INEX Wall Panel Bricks</div>
+        <div className="blt-tit">STAR Wall Panel Bricks</div>
         <div className="contain">
           <div className="feature-zone">
             <div className="title">브릭스(BRICKS) 패널</div>

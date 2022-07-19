@@ -8,7 +8,7 @@ const Sub1_5 = () => {
   return (
     <>
       <div className="doc-cnt">
-        <div className="blt-tit">INEX Wall Panel ALCP</div>
+        <div className="blt-tit">STAR Wall Panel ALCP</div>
         <div className="contain">
           <div className="feature-zone">
             <div className="title">ALCP(알루미늄 복합보드) 패널</div>
