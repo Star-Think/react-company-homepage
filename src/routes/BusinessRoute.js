@@ -32,7 +32,7 @@ const BusinessRoute = () => {
 
   const contentObj2 = {
     title: "SATIS(화장실 칸막이)",
-    content: `SATIS는 INEX WALL의 기술과 경험을 기반으로 만들어진 화장실 칸막이 시스템으로 지난 10여 년간 학교 및 공공 화장실 문화를 개선해왔습니다.`,
+    content: `SATIS는 STAR WALL의 기술과 경험을 기반으로 만들어진 화장실 칸막이 시스템으로 지난 10여 년간 학교 및 공공 화장실 문화를 개선해왔습니다.`,
   };
 
   const contentObj3 = {

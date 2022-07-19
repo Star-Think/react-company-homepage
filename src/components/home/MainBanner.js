@@ -86,7 +86,7 @@ const MainBanner = () => {
                     >
                       <p className="t1 ff-ns">건축 외·내부의 혁신</p>
                       <p className="t2 ff-nf">
-                        <img src="/images/main/logo_vis.png" alt="INEX" />
+                        <img src="/images/main/logo_vis.png" alt="STAR" />
                       </p>
                       <p className="t3 ff-ns">
                         건물의 에너지 소비를 절감시키는 Green Technology 개발로{" "}

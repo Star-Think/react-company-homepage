@@ -159,9 +159,9 @@ const MainContent = () => {
                   <div className="txtbox">
                     <div className="tit">SATIS (화장실칸막이)</div>
                     <div className="txt">
-                      INEXWALL의 기술과 경험을 기반으로 High Quality 화장실
-                      칸막이 시장을 선도하며, 지난 10여년간 학교 및 공공 화장실
-                      문화를 개선해 왔습니다.
+                      별생각의 기술과 경험을 기반으로 High Quality 화장실 칸막이
+                      시장을 선도하며, 지난 10여년간 학교 및 공공 화장실 문화를
+                      개선해 왔습니다.
                     </div>
                     <a
                       href

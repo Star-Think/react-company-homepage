@@ -41,7 +41,7 @@ const HisContent = () => {
               <li>
                 <div className="year ff-ns">2002</div>
                 <div className="txt">
-                  <p>(주)휴먼에이텍 창업</p>
+                  <p>(주)별생각 창업</p>
                   <p>전문 건설업 면허 취득</p>
                 </div>
               </li>
@@ -67,7 +67,7 @@ const HisContent = () => {
               <li>
                 <div className="year ff-ns">2017</div>
                 <div className="txt">
-                  <p>(주)INEXWALL로 상호변경</p>
+                  <p>(주)별생각으로 상호변경</p>
                   <p>연구개발 전담부서 런칭</p>
                 </div>
               </li>
