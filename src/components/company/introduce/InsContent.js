@@ -12,12 +12,10 @@ const InsContent = () => {
         <div className="overview">
           <div className="contain">
             <div className="headcopy">
-              <h3 className="ff-ns">
-                건축·사업분야를 선도하는 이넥스월입니다.
-              </h3>
+              <h3 className="ff-ns">건축·사업분야를 선도하는 별생각입니다.</h3>
               <p>
-                이넥스월의 강점은 건축·건설사업 분야에 걸쳐 다양한 제품과
-                서비스를 제공하는 역랑에 있습니다.
+                별생각의 강점은 건축·건설사업 분야에 걸쳐 다양한 제품과 서비스를
+                제공하는 역랑에 있습니다.
               </p>
               <p>
                 기능성 건축자재와 서비스를 제공함으로써 우리의 건축환경을 보다

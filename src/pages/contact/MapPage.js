@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ContentMap from "../../components/contact/ContentMap";
 import MainFooter from "../../components/MainFooter";
 import MainHeader from "../../components/MainHeader";
 
 const MapPage = () => {
+  useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `Contact Us | (주)별생각`;
+  }, []);
   return (
     <>
       <MainHeader headerFix={true} />

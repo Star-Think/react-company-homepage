@@ -12,23 +12,35 @@ const ProjectTop = ({ type }) => {
         <div className="inner">
           <div className="swiper-container">
             <ul className="swiper-wrapper">
-              <li className={`swiper-slide ${type ? "" : "active"}`}>
+              <li
+                className={`swiper-slide ${type ? "" : "active"}`}
+                onClick={() => navigate("/project")}
+              >
                 <a href onClick={() => navigate("/project")}>
                   All
                 </a>
               </li>
-              <li className={`swiper-slide ${type === "0" ? "active" : ""}`}>
-                <a href onClick={() => navigate("/project/0")}>
+              <li
+                className={`swiper-slide ${type === "0" ? "active" : ""}`}
+                onClick={() => navigate("/project/0")}
+              >
+                <a href onClick={(e) => e.preventDefault}>
                   관공서
                 </a>
               </li>
-              <li className={`swiper-slide ${type === "1" ? "active" : ""}`}>
-                <a href onClick={() => navigate("/project/1")}>
+              <li
+                className={`swiper-slide ${type === "1" ? "active" : ""}`}
+                onClick={() => navigate("/project/1")}
+              >
+                <a href onClick={(e) => e.preventDefault}>
                   교육기관
                 </a>
               </li>
-              <li className={`swiper-slide ${type === "2" ? "active" : ""}`}>
-                <a href onClick={() => navigate("/project/2")}>
+              <li
+                className={`swiper-slide ${type === "2" ? "active" : ""}`}
+                onClick={() => navigate("/project/2")}
+              >
+                <a href onClick={(e) => e.preventDefault}>
                   민간시설
                 </a>
               </li>

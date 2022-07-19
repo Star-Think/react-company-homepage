@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Sub5 = () => {
+  useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `동화자연마루스쿨 | (주)별생각`;
+  }, []);
   return (
     <>
       <div className="doc-cnt">

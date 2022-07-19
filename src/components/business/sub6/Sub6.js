@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react"; // basic
 import SwiperCore, {
   Navigation,
@@ -16,6 +16,10 @@ import "swiper/css/thumbs";
 
 const Sub6 = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `동화자연마루 에코스택 | (주)별생각`;
+  }, []);
   return (
     <>
       <div className="doc-cnt">

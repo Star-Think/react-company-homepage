@@ -13,10 +13,11 @@ const ProjectNum = ({ pageNumObj, type }) => {
       iCount++
     ) {
       if (iCount === pageNumObj.page) {
-        list.push(<strong>{pageNumObj.page}</strong>);
+        list.push(<strong key={iCount}>{pageNumObj.page}</strong>);
       } else {
         list.push(
           <a
+            key={iCount}
             href
             onClick={() => {
               navigate(`/project${parseInt(type) >= 0 ? "/" + type : ""}`, {
@@ -87,7 +88,7 @@ const ProjectNum = ({ pageNumObj, type }) => {
         ) : null}
         {pageNumObj.endPage < pageNumObj.totalPage ? (
           <a
-            className="direction next"
+            className="direction last"
             href
             title="마지막페이지"
             onClick={() => {

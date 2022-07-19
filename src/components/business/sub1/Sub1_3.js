@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Sub1_3 = () => {
+  useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `내진 준불연 단열일체형 패널 | (주)별생각`;
+  }, []);
   return (
     <>
       <div className="doc-cnt">

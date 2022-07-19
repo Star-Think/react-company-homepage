@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Sub4 = () => {
+  useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `PF단열재 | (주)별생각`;
+  }, []);
   return (
     <>
       <div className="doc-cnt">

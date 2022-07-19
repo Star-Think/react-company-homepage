@@ -51,15 +51,15 @@ export const sub_menu_list = [
     sub: [
       {
         subTextName: "관공서",
-        herf: "",
+        herf: "/project/0",
       },
       {
         subTextName: "교육기관",
-        herf: "",
+        herf: "/project/1",
       },
       {
         subTextName: "민간시설",
-        herf: "",
+        herf: "/project/2",
       },
     ],
     active: "",

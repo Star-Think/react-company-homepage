@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react"; // basic
 import SwiperCore, { Navigation, Autoplay, EffectFade } from "swiper";
 import "swiper/css"; //basic
@@ -6,6 +6,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 const Sub1 = () => {
+  useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `내진 준불연 단열일체형 패널 | (주)별생각`;
+  }, []);
   return (
     <>
       <div className="doc-cnt">

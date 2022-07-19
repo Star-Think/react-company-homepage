@@ -26,7 +26,7 @@ const MainHeader = ({ headerFix }) => {
             className="off"
             style={headerFix ? { display: "none" } : {}}
           >
-            <img src={"/images/common/logo.png"} alt="(주)이넥스월" />
+            <img src={"/images/common/logo.png"} alt="(주)별생각" />
           </a>
           <a
             href
@@ -34,7 +34,7 @@ const MainHeader = ({ headerFix }) => {
             className="on"
             style={headerFix ? { display: "block" } : {}}
           >
-            <img src={"/images/common/logo_on.png"} alt="(주)이넥스월" />
+            <img src={"/images/common/logo_on.png"} alt="(주)별생각" />
           </a>
         </div>
         <div className="contain">
@@ -106,17 +106,17 @@ const MainHeader = ({ headerFix }) => {
                 <div className={`submenu ${menuCheck ? "menu-active" : ""}`}>
                   <ul>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a href onClick={() => navigate("/project/0")}>
                         관공서
                       </a>
                     </li>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a href onClick={() => navigate("/project/1")}>
                         교육기관
                       </a>
                     </li>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a href onClick={() => navigate("/project/2")}>
                         민간시설
                       </a>
                     </li>

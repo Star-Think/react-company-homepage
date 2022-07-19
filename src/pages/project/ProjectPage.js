@@ -20,6 +20,11 @@ const ProjectPage = () => {
     }
   }, []);
 
+  useEffect(() => {
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `project | (주)별생각`;
+  }, []);
+
   return (
     <>
       <MainHeader headerFix={true} />

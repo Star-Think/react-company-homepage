@@ -30,7 +30,14 @@ const MainContent = () => {
                       <TabList>
                         <Tab>
                           <li className="swiper-slide">
-                            <a href onClick={(e) => e.preventDefault}>
+                            <a
+                              href
+                              onClick={(e) =>
+                                navigate("/detail/130", {
+                                  state: { main: "Y" },
+                                })
+                              }
+                            >
                               <div className="ico ico1"></div>
                               <span className="tit">Uni-Wall</span>
                             </a>
@@ -38,7 +45,14 @@ const MainContent = () => {
                         </Tab>
                         <Tab>
                           <li className="swiper-slide">
-                            <a href onClick={(e) => e.preventDefault}>
+                            <a
+                              href
+                              onClick={(e) =>
+                                navigate("/detail/130", {
+                                  state: { main: "Y" },
+                                })
+                              }
+                            >
                               <div className="ico ico2"></div>
                               <span className="tit">SATIS</span>
                             </a>
@@ -46,7 +60,14 @@ const MainContent = () => {
                         </Tab>
                         <Tab>
                           <li className="swiper-slide">
-                            <a href onClick={(e) => e.preventDefault}>
+                            <a
+                              href
+                              onClick={(e) =>
+                                navigate("/detail/130", {
+                                  state: { main: "Y" },
+                                })
+                              }
+                            >
                               <div className="ico ico3"></div>
                               <span className="tit">SATIS 항균 불연패널</span>
                             </a>
@@ -54,7 +75,14 @@ const MainContent = () => {
                         </Tab>
                         <Tab>
                           <li className="swiper-slide">
-                            <a href onClick={(e) => e.preventDefault}>
+                            <a
+                              href
+                              onClick={(e) =>
+                                navigate("/detail/130", {
+                                  state: { main: "Y" },
+                                })
+                              }
+                            >
                               <div className="ico ico4"></div>
                               <span className="tit">PF 단열재</span>
                             </a>
@@ -62,7 +90,14 @@ const MainContent = () => {
                         </Tab>
                         <Tab>
                           <li className="swiper-slide">
-                            <a href onClick={(e) => e.preventDefault}>
+                            <a
+                              href
+                              onClick={(e) =>
+                                navigate("/detail/130", {
+                                  state: { main: "Y" },
+                                })
+                              }
+                            >
                               <div className="ico ico5"></div>
                               <span className="tit">동화자연마루 스쿨</span>
                             </a>
@@ -70,7 +105,14 @@ const MainContent = () => {
                         </Tab>
                         <Tab>
                           <li className="swiper-slide">
-                            <a href onClick={(e) => e.preventDefault}>
+                            <a
+                              href
+                              onClick={(e) =>
+                                navigate("/detail/130", {
+                                  state: { main: "Y" },
+                                })
+                              }
+                            >
                               <div className="ico ico6"></div>
                               <span className="tit">동화자연마루 에코스텍</span>
                             </a>
@@ -243,7 +285,13 @@ const MainContent = () => {
               <h2 className="main-tit ff-tt">
                 <span>Projects</span>
               </h2>
-              <a href onClick={(e) => e.preventDefault} className="btn-more">
+              <a
+                href
+                onClick={(e) =>
+                  navigate("/detail/130", { state: { main: "Y" } })
+                }
+                className="btn-more"
+              >
                 View More
               </a>
               <button
@@ -275,7 +323,12 @@ const MainContent = () => {
                 <ul className="items">
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/130", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/130/large_a85a3d0e7438466cd34de01097af2c5d0.jpg"
@@ -288,7 +341,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/16", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/16/large_a78fcb1d42a3d8af132af0397e022c0b0.jpg"
@@ -301,7 +359,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/2", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/2/large_b67856cfc36188c4cfe913b7dd53e2e80.jpg"
@@ -314,7 +377,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/131", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/131/large_a6d0319beb5e6595acd735016f1756bd0.jpg"
@@ -327,7 +395,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/17", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/17/large_9af372073bc6d3137a643bfe169591ba0.jpg"
@@ -342,7 +415,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/3", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/3/large_4cecbad96045773c77a0401d186ac16e0.jpg"
@@ -355,7 +433,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/132", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/132/large_aebcb6e3e94b4585ed16ff5e31e157a50.jpg"
@@ -368,7 +451,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/130", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/18/large_4c65757f1aaf001e80bd594f7506f13f0.jpg"
@@ -381,7 +469,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/130", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/4/large_759b51a176d12bf18b58e22a1070f8ba0.jpg"
@@ -394,7 +487,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/133", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/133/large_bd15e93deeaec3e6a7bcfefcec30d40b0.jpg"
@@ -407,7 +505,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/19", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/19/large_f1d8bb9f1959bd05cf115884cc72abcd0.jpg"
@@ -420,7 +523,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/5", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/5/large_def0f1335eed3ead6fc5e0bc42d342ea0.jpg"
@@ -433,7 +541,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/134", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/134/large_cbdd84b0a579736e8399d722e15a5fd20.jpg"
@@ -446,7 +559,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/20", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/20/large_a9f7a19841d2b3c49592ec0ffb4f69400.jpg"
@@ -459,7 +577,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/6", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/6/large_46d15190dbb5138f7e0825845658632a0.jpg"
@@ -472,7 +595,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/135", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/135/large_c45f186b4d38223d2d0feb180a9d394b0.jpg"
@@ -485,7 +613,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/21", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/21/large_140784c60daf00bc2656bbb9886969110.jpg"
@@ -498,7 +631,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/7", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/7/large_9e0495fddbdb39385f08cd3b7984d8b90.jpg"
@@ -511,7 +649,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/136", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/136/large_6a15f6c08b38a1bb24bf133e620c73f10.jpg"
@@ -524,7 +667,12 @@ const MainContent = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <li>
-                      <a href onClick={(e) => e.preventDefault}>
+                      <a
+                        href
+                        onClick={(e) =>
+                          navigate("/detail/22", { state: { main: "Y" } })
+                        }
+                      >
                         <div className="thumb">
                           <img
                             src="/uploaded/product/22/large_bd7431cf31f2d264146c1b0460ebbc6c0.jpg"

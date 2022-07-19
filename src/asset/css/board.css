@@ -658,6 +658,8 @@ fieldset legend {
 
 .paginate a.direction.first {
   background-image: url("/public/images/bbs/btn_first.png");
+  padding-left: 20px;
+  background-position: 0 50%;
 }
 
 .paginate a.direction.prev {
@@ -674,10 +676,12 @@ fieldset legend {
 
 .paginate a.direction.last {
   background-image: url("/public/images/bbs/btn_last.png");
+  padding-right: 20px;
+  background-position: 100% 50%;
 }
 
 .paginate a.direction.disabled {
-  opacity: 0.4;
+  /* opacity: 0.4; */
 }
 
 /* 코멘트 */
@@ -854,6 +858,7 @@ fieldset legend {
 .project-view .head {
   position: relative;
   margin-bottom: 40px;
+  text-align: left;
 }
 
 .project-view .head .tit {

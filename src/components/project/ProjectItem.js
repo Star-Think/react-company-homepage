@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ProjectItem = ({ project }) => {
+  const navigate = useNavigate();
   return (
     <li>
-      <a href>
+      <a href onClick={() => navigate(`/detail/${project.idx}`)}>
         <div className="thumb">
           <img src={project.image} alt="" />
         </div>
