@@ -12,6 +12,7 @@ import React, { useState } from "react";
 import CompanyRoute from "./routes/CompanyRoute";
 import BusinessRoute from "./routes/BusinessRoute";
 import ContactRoute from "./routes/ContactRoute";
+import ProjectRoute from "./routes/ProjectRoute";
 
 export const CommonDispatchContext = React.createContext();
 
@@ -27,6 +28,8 @@ function App() {
               <Route path="/company/*" element={<CompanyRoute />} />
               <Route path="/business/*" element={<BusinessRoute />} />
               <Route path="/contact" element={<ContactRoute />} />
+              <Route path="/project" element={<ProjectRoute />} />
+              <Route path="/project/:type" element={<ProjectRoute />} />
             </Routes>
           </div>
         </div>

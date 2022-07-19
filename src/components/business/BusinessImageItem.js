@@ -9,10 +9,10 @@ const BusinessImageItem = ({ imageSrc, title, content }) => {
         </div>
         <div className="tit">{title}</div>
         <div className="txt">
-          {content.split("\n").map((txt) => (
+          {content.split("\n").map((txt, idx) => (
             <>
               {txt}
-              <br />
+              <br key={idx} />
             </>
           ))}
         </div>

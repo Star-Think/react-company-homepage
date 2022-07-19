@@ -3,7 +3,7 @@ import BusinessImageItem from "./BusinessImageItem";
 
 const BusinessSub2 = () => {
   return (
-    <div class="row">
+    <div className="row">
       <BusinessImageItem
         imageSrc={"/images/sub/ico_bsnsinfo2_1.png"}
         title={"Experience"}

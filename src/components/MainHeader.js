@@ -100,7 +100,7 @@ const MainHeader = ({ headerFix }) => {
                 </div>
               </li>
               <li className={`m3 ${headerFix ? "fontColorBlack" : ""}`}>
-                <a href onClick={(e) => e.preventDefault}>
+                <a href onClick={(e) => navigate("/project")}>
                   Projects
                 </a>
                 <div className={`submenu ${menuCheck ? "menu-active" : ""}`}>

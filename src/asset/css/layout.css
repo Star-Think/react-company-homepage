@@ -1495,3 +1495,6 @@ div.menu-opened .btn-m-menu span:after {
 .txtbox > a {
   cursor: pointer;
 }
+.project-list {
+  text-align: left;
+}
