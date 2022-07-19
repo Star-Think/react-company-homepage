@@ -30,14 +30,7 @@ const MainContent = () => {
                       <TabList>
                         <Tab>
                           <li className="swiper-slide">
-                            <a
-                              href
-                              onClick={(e) =>
-                                navigate("/detail/130", {
-                                  state: { main: "Y" },
-                                })
-                              }
-                            >
+                            <a href onClick={(e) => e.preventDefault}>
                               <div className="ico ico1"></div>
                               <span className="tit">Uni-Wall</span>
                             </a>
@@ -45,14 +38,7 @@ const MainContent = () => {
                         </Tab>
                         <Tab>
                           <li className="swiper-slide">
-                            <a
-                              href
-                              onClick={(e) =>
-                                navigate("/detail/130", {
-                                  state: { main: "Y" },
-                                })
-                              }
-                            >
+                            <a href onClick={(e) => e.preventDefault}>
                               <div className="ico ico2"></div>
                               <span className="tit">SATIS</span>
                             </a>
@@ -60,14 +46,7 @@ const MainContent = () => {
                         </Tab>
                         <Tab>
                           <li className="swiper-slide">
-                            <a
-                              href
-                              onClick={(e) =>
-                                navigate("/detail/130", {
-                                  state: { main: "Y" },
-                                })
-                              }
-                            >
+                            <a href onClick={(e) => e.preventDefault}>
                               <div className="ico ico3"></div>
                               <span className="tit">SATIS 항균 불연패널</span>
                             </a>
@@ -75,14 +54,7 @@ const MainContent = () => {
                         </Tab>
                         <Tab>
                           <li className="swiper-slide">
-                            <a
-                              href
-                              onClick={(e) =>
-                                navigate("/detail/130", {
-                                  state: { main: "Y" },
-                                })
-                              }
-                            >
+                            <a href onClick={(e) => e.preventDefault}>
                               <div className="ico ico4"></div>
                               <span className="tit">PF 단열재</span>
                             </a>
@@ -90,14 +62,7 @@ const MainContent = () => {
                         </Tab>
                         <Tab>
                           <li className="swiper-slide">
-                            <a
-                              href
-                              onClick={(e) =>
-                                navigate("/detail/130", {
-                                  state: { main: "Y" },
-                                })
-                              }
-                            >
+                            <a href onClick={(e) => e.preventDefault}>
                               <div className="ico ico5"></div>
                               <span className="tit">동화자연마루 스쿨</span>
                             </a>
@@ -105,14 +70,7 @@ const MainContent = () => {
                         </Tab>
                         <Tab>
                           <li className="swiper-slide">
-                            <a
-                              href
-                              onClick={(e) =>
-                                navigate("/detail/130", {
-                                  state: { main: "Y" },
-                                })
-                              }
-                            >
+                            <a href onClick={(e) => e.preventDefault}>
                               <div className="ico ico6"></div>
                               <span className="tit">동화자연마루 에코스텍</span>
                             </a>
