@@ -26,7 +26,11 @@ const MainHeader = ({ headerFix }) => {
             className="off"
             style={headerFix ? { display: "none" } : {}}
           >
-            <img src={"/images/common/logo.png"} alt="(주)별생각" />
+            <img
+              src={"/images/common/logo.png"}
+              alt="(주)별생각"
+              style={{ width: "81px", height: "50px" }}
+            />
           </a>
           <a
             href
@@ -34,7 +38,11 @@ const MainHeader = ({ headerFix }) => {
             className="on"
             style={headerFix ? { display: "block" } : {}}
           >
-            <img src={"/images/common/logo_on.png"} alt="(주)별생각" />
+            <img
+              src={"/images/common/logo_on.png"}
+              alt="(주)별생각"
+              style={{ width: "81px", height: "50px" }}
+            />
           </a>
         </div>
         <div className="contain">
